@@ -40,7 +40,9 @@ Description:
 >> - PercentPopulationInfected: Shows the percentage of the population that has contracted COVID-19, calculated by dividing the total number of COVID-19 cases by the total population and multiplying by 100.<br>
 ## Results and Insights
 >The project uncovers significant trends in COVID-19 cases, deaths, and vaccinations across different countries and regions.<br>
->Key insights include the relationship between vaccination progress and the reduction in COVID cases, as well as the countries with the highest infection and death rates.<br>
+>Key insights include identifying which countries and continents 
+were most severely impacted by COVID-19 in terms of both 
+infection rates and death counts.<br>
 >>Andorra had the highest percentage of infected population with 17.13%<br>
 >>The United States had the highest death count of 576,232.<br>
 >>The Global Infection Percentage was 2.11% of the population.
