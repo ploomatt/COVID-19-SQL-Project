@@ -48,6 +48,58 @@ infection rates and death counts.<br>
 >>The Global Infection Percentage was 2.11% of the population.
 
 
+Here is your updated readme:
+markdown# SQL Relational Database Analysis: COVID-19 Case Study
+Description:
+>This SQL project focuses on analyzing international COVID-19 statistics for the years 2020 and 2021.
 
+## Project Overview
+#### Motivation
+>This project aims to leverage SQL and data analysis techniques to examine key COVID-19 statistics from 2020 and 2021, including case counts, deaths, and vaccination rates. By filtering and querying large datasets, this analysis seeks to uncover valuable insights into the global distribution of the virus and the effectiveness of public health measures.
+
+#### Technologies Used
+>- SQL: Data querying and analysis using SQL queries for aggregating, filtering, and transforming COVID-19 data.<br>
+>- Database: Relational database management system (Microsoft Server Management Studio) for data storage and manipulation.<br>
+>- Data Cleaning: CSV handling and organizing using Microsoft Excel.
+
+#### Features
+>The queries used in this project are designed to explore various connections between key COVID-19 metrics.
+>- Death percentage by country over time
+>- US infection rate over time
+>- Countries with highest infection rates
+>- Countries with highest death counts
+>- Continents with highest death counts
+>- Global death percentage
+>- Top 10 most vaccinated countries
+>- Total vaccinations by continent
+
+## Data
+#### Data Source
+>Covid 19 Data from the University of Oxford and Global Change Data Lab.<br>
+>>https://ourworldindata.org/covid-deaths <br>
+>The data used will be attached below as CovidDeathsXL and CovidVaccinations as a csv file
+
+### Data Structure
+>The data is structured in a relational format, with each record representing COVID-19 statistics for a specific country or region on a given date. The key columns in the dataset are:<br>
+>> - Location: Represents the country or region for which the data is recorded.<br>
+>> - Population: The total population of the country or region.<br>
+>> - Continent: The continent to which the location belongs.<br>
+>> - Date: The specific date when the data was recorded, allowing for time-series analysis.<br>
+>> - New_vaccinations: The number of new vaccinations administered on the recorded date.<br>
+
+### Data Structure Continued...
+>As part of the analysis, I created several new data columns to represent key proportions and metrics derived from the existing dataset. These columns were instrumental in gaining deeper insights into the vaccination and death trends. The following new columns were introduced:<br>
+>> - DeathPercentage: Indicates the percentage of individuals who have died as a result of COVID-19, calculated by dividing the total number of deaths by the total number of confirmed cases and multiplying by 100.<br>
+>> - TotalDeathCount: Represents the cumulative number of deaths due to COVID-19 across all recorded dates.<br>
+>> - PercentPopulationInfected: Shows the percentage of the population that has contracted COVID-19, calculated by dividing the total number of COVID-19 cases by the total population and multiplying by 100.<br>
+>> - HighestInfectionCount: Represents the peak number of COVID-19 cases recorded for a country across all dates.<br>
+>> - TotalVaccinations: Represents the total number of vaccine doses administered per country or continent.<br>
+
+## Results and Insights
+>The project uncovers significant trends in COVID-19 cases, deaths, and vaccinations across different countries and regions.<br>
+>Key insights include identifying which countries and continents were most severely impacted by COVID-19 in terms of both infection rates and death counts.<br>
+>>Andorra had the highest percentage of infected population with 17.13%<br>
+>>The United States had the highest death count of 576,232.<br>
+>>The Global Infection Percentage was 2.11% of the population.
 
 
