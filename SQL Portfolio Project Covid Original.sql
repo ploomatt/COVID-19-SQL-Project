@@ -1,11 +1,11 @@
---Provide an overview of all values listed in the dataset
+--1. Provide an overview of all values listed in the dataset
 Select *
 From PortfolioProject..CovidDeathsXL
 Where continent <> ''
 order by location, CAST(date AS DATE);
 
 
---Total cases vs Total Deaths
+--2. Total cases vs Total Deaths
 --Liklihood of death upon contraction
 Select 
 	Location, 
@@ -18,7 +18,7 @@ Where continent <> ''
 order by location, CAST(date AS DATE);
 
 
---Total Covid cases vs Population in the US
+--3. Total Covid cases vs Population in the US
 --percentage of population contracted Covid
 Select 
 	Location, 
@@ -31,7 +31,7 @@ Where location like '%states%' and continent <> ''
 order by location, CAST(date AS DATE);
 
 
---Look at Countries with Highest Infection Rate compared to population
+--4. Look at Countries with Highest Infection Rate compared to population
 SELECT 
 	Location, 
 	Population, 
@@ -43,7 +43,7 @@ GROUP BY Location, Population
 ORDER BY PercentPopulationInfected desc;
 
 
---Show Countries with Highest Death Count per Population(Countries)
+--5. Show Countries with Highest Death Count per Population(Countries)
 Select 
 	Location, 
 	Population, 
@@ -54,7 +54,7 @@ GROUP BY location, population
 ORDER BY TotalDeathCount desc;
 
 
---Show continents with the highest death count
+--6. Show continents with the highest death count
 Select 
 	continent,
 	MAX(cast(total_deaths as int)) as TotalDeathCount
@@ -64,7 +64,7 @@ GROUP BY continent
 ORDER BY TotalDeathCount desc;
 
 
---Death percentage by Global infection numbers
+--7. Death percentage by Global infection numbers
 SELECT 
 	SUM(CAST(new_cases AS INT)) AS TotalCases,
 	SUM(CAST(new_deaths AS INT)) AS TotalDeaths,
@@ -75,7 +75,7 @@ ORDER BY 1, 2
 
 
 
---Top 10 Countries by total vaccination
+--8. Top 10 Countries by total vaccination
 SELECT TOP 10
     dea.location,
     dea.population,
@@ -90,7 +90,7 @@ GROUP BY dea.location, dea.population
 ORDER BY TotalVaccinations DESC;
 
 
---Total Vaccinations by Continent
+--9. Total Vaccinations by Continent
 SELECT
     dea.continent,
     SUM(CONVERT(FLOAT, vac.new_vaccinations)) AS TotalVaccinations
