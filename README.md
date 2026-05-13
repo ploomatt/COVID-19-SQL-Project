@@ -11,9 +11,15 @@ Description:
 >- Data Cleaning: CSV handling and organizing using Microsoft Excel.
 #### Features
 >The queries used in this project are designed to explore various connections between key COVID-19 metrics.
->>- By comparing Total COVID cases vs. Total Deaths, the likelihood of death upon contraction is analyzed.<br>
->>- Queries also examine the percentage of the population contracted by COVID<br>
->>- Identifying countries with the highest infection rates relative to their population, and ranks continents by the highest death count, helping to reveal patterns and disparities in the impact of the pandemic globally.<br>
+>- Death percentage by country over time
+>- US infection rate over time
+>- Countries with highest infection rates
+>- Countries with highest death counts
+>- Continents with highest death counts
+>- Global death percentage
+>- Top 10 most vaccinated countries
+>- Total vaccinations by continent
+<br>
 >>- Data is put into perspective of population by calculating the percentage of 
 ## Data
 #### Data Source
